@@ -10,7 +10,9 @@ import string
 
 
 # print(generate())  # call the function
- # Second way
-listOfCaracters = string.ascii_letters + string.digits +string.punctuation
-pasword = ''.join(random.sample(listOfCaracters, 24))
-print(listOfCaracters)
+# Second way
+listOfCaracters = string.ascii_letters + string.digits + \
+    string.punctuation  # define a variable for list of caracters
+pasword = ''.join(random.sample(listOfCaracters, int(  # make a list of caracters with random sample and get a number from uset to detemine the length of password
+    input("Enter the length of password: "))))
+print(pasword)
